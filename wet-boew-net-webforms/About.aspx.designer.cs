@@ -11,7 +11,7 @@ namespace wet_boew_net_webforms
 {
 
 
-    public partial class _Default
+    public partial class About
     {
     }
 }

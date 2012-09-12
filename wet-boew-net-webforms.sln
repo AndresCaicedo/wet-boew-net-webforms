@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Web Developer Express 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wet-boew-net-webforms", "wet-boew-net-webforms\wet-boew-net-webforms.csproj", "{2AF0FA1A-FA32-4EA0-83B6-A05774561E96}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wet-boew-net-webforms", "wet-boew-net-webforms\wet-boew-net-webforms.csproj", "{DD4803F2-4909-4074-8C13-45C765B2576C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2AF0FA1A-FA32-4EA0-83B6-A05774561E96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2AF0FA1A-FA32-4EA0-83B6-A05774561E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2AF0FA1A-FA32-4EA0-83B6-A05774561E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2AF0FA1A-FA32-4EA0-83B6-A05774561E96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD4803F2-4909-4074-8C13-45C765B2576C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD4803F2-4909-4074-8C13-45C765B2576C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD4803F2-4909-4074-8C13-45C765B2576C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD4803F2-4909-4074-8C13-45C765B2576C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

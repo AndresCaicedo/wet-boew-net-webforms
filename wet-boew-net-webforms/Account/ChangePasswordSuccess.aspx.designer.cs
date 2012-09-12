@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace wet_boew_net_webforms
+namespace wet_boew_net_webforms.Account
 {
 
 
-    public partial class _Default
+    public partial class ChangePasswordSuccess
     {
     }
 }
