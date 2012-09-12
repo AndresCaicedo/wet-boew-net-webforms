@@ -56,7 +56,6 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
-    <Content Include="build\build-tasks.xml" />
     <Content Include="build\grids\css\util-ie-min.css" />
     <Content Include="build\grids\css\util-min.css" />
     <Content Include="build\grids\images\border.gif" />
@@ -387,13 +386,6 @@
   <ItemGroup>
     <Content Include="Account\Web.config" />
     <Content Include="Site.Master" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="build\build-tasks.properties" />
-    <None Include="build\compile.rb" />
-    <None Include="build\config.rb" />
-    <None Include="build\jshint.globals.properties" />
-    <None Include="build\README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
