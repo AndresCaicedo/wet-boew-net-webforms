@@ -1,0 +1,710 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2AF0FA1A-FA32-4EA0-83B6-A05774561E96}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>wet_boew_net_webforms</RootNamespace>
+    <AssemblyName>wet-boew-net-webforms</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="build\build-tasks.xml" />
+    <Content Include="build\grids\css\util-ie-min.css" />
+    <Content Include="build\grids\css\util-min.css" />
+    <Content Include="build\grids\images\border.gif" />
+    <Content Include="build\grids\images\bullet.png" />
+    <Content Include="build\grids\images\cn-psnb-border.gif" />
+    <Content Include="build\grids\images\icons.png" />
+    <Content Include="build\grids\images\mail.png" />
+    <Content Include="build\grids\images\module.jpg" />
+    <Content Include="build\grids\images\thermometer-0.gif" />
+    <Content Include="build\grids\images\thermometer-10.gif" />
+    <Content Include="build\grids\images\thermometer-100.gif" />
+    <Content Include="build\grids\images\thermometer-110.gif" />
+    <Content Include="build\grids\images\thermometer-120.gif" />
+    <Content Include="build\grids\images\thermometer-20.gif" />
+    <Content Include="build\grids\images\thermometer-30.gif" />
+    <Content Include="build\grids\images\thermometer-40.gif" />
+    <Content Include="build\grids\images\thermometer-50.gif" />
+    <Content Include="build\grids\images\thermometer-60.gif" />
+    <Content Include="build\grids\images\thermometer-70.gif" />
+    <Content Include="build\grids\images\thermometer-80.gif" />
+    <Content Include="build\grids\images\thermometer-90.gif" />
+    <Content Include="build\grids\images\user-silhouette.png" />
+    <Content Include="build\js\bin\multimedia.swf" />
+    <Content Include="build\js\css\pe-ap-ie-min.css" />
+    <Content Include="build\js\css\pe-ap-min.css" />
+    <Content Include="build\js\dependencies\bookmark-min.js" />
+    <Content Include="build\js\dependencies\browsertweaks-min.js" />
+    <Content Include="build\js\dependencies\calendar-min.js" />
+    <Content Include="build\js\dependencies\colorbox-min.js" />
+    <Content Include="build\js\dependencies\easytabs-min.js" />
+    <Content Include="build\js\dependencies\equalheights-min.js" />
+    <Content Include="build\js\dependencies\hashchange-min.js" />
+    <Content Include="build\js\dependencies\hoverintent-min.js" />
+    <Content Include="build\js\dependencies\json-min.js" />
+    <Content Include="build\js\dependencies\matchMedia-min.js" />
+    <Content Include="build\js\dependencies\metadata-min.js" />
+    <Content Include="build\js\dependencies\outside-min.js" />
+    <Content Include="build\js\dependencies\pie-min.js" />
+    <Content Include="build\js\dependencies\prettify-min.js" />
+    <Content Include="build\js\dependencies\prettify\lang-apollo-min.js" />
+    <Content Include="build\js\dependencies\prettify\lang-clj-min.js" />
+    <Content Include="build\js\dependencies\prettify\lang-css-min.js" />
+    <Content Include="build\js\dependencies\prettify\lang-go-min.js" />
+    <Content Include="build\js\dependencies\prettify\lang-hs-min.js" />
+    <Content Include="build\js\dependencies\prettify\lang-lisp-min.js" />
+    <Content Include="build\js\dependencies\prettify\lang-lua-min.js" />
+    <Content Include="build\js\dependencies\prettify\lang-ml-min.js" />
+    <Content Include="build\js\dependencies\prettify\lang-n-min.js" />
+    <Content Include="build\js\dependencies\prettify\lang-proto-min.js" />
+    <Content Include="build\js\dependencies\prettify\lang-scala-min.js" />
+    <Content Include="build\js\dependencies\prettify\lang-sql-min.js" />
+    <Content Include="build\js\dependencies\prettify\lang-tex-min.js" />
+    <Content Include="build\js\dependencies\prettify\lang-vb-min.js" />
+    <Content Include="build\js\dependencies\prettify\lang-vhdl-min.js" />
+    <Content Include="build\js\dependencies\prettify\lang-wiki-min.js" />
+    <Content Include="build\js\dependencies\prettify\lang-xq-min.js" />
+    <Content Include="build\js\dependencies\prettify\lang-yaml-min.js" />
+    <Content Include="build\js\dependencies\raphael-min.js" />
+    <Content Include="build\js\dependencies\resize-min.js" />
+    <Content Include="build\js\dependencies\validate-min.js" />
+    <Content Include="build\js\dependencies\validateAdditional-min.js" />
+    <Content Include="build\js\dependencies\xregexp-min.js" />
+    <Content Include="build\js\i18n\en-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_ar-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_bg-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_ca-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_cn-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_cs-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_da-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_de-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_el-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_es-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_eu-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_fa-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_fi-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_fr-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_ge-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_he-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_hu-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_it-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_ja-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_kk-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_lt-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_lv-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_nl-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_no-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_pl-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_ptbr-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_ptpt-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_ro-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_ru-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_se-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_si-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_sk-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_sl-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_sr-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_th-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_tr-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_tw-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_ua-min.js" />
+    <Content Include="build\js\i18n\formvalid\messages_vi-min.js" />
+    <Content Include="build\js\i18n\formvalid\methods_de-min.js" />
+    <Content Include="build\js\i18n\formvalid\methods_nl-min.js" />
+    <Content Include="build\js\i18n\formvalid\methods_pt-min.js" />
+    <Content Include="build\js\i18n\fr-min.js" />
+    <Content Include="build\js\images\archived\warning.gif" />
+    <Content Include="build\js\images\calendar\n.png" />
+    <Content Include="build\js\images\calendar\p.png" />
+    <Content Include="build\js\images\datepicker\icon.png" />
+    <Content Include="build\js\images\lightbox\controls-old.png" />
+    <Content Include="build\js\images\lightbox\controls.png" />
+    <Content Include="build\js\images\lightbox\loading.gif" />
+    <Content Include="build\js\images\menubar\menu-arrow.gif" />
+    <Content Include="build\js\images\multimedia\background-overlay.png" />
+    <Content Include="build\js\images\multimedia\background-toolbar.png" />
+    <Content Include="build\js\images\multimedia\cc.png" />
+    <Content Include="build\js\images\multimedia\ff.png" />
+    <Content Include="build\js\images\multimedia\loading.png" />
+    <Content Include="build\js\images\multimedia\mute_off.png" />
+    <Content Include="build\js\images\multimedia\mute_on.png" />
+    <Content Include="build\js\images\multimedia\overlay.png" />
+    <Content Include="build\js\images\multimedia\pause.png" />
+    <Content Include="build\js\images\multimedia\play.png" />
+    <Content Include="build\js\images\multimedia\rewind.png" />
+    <Content Include="build\js\images\progress\progress.gif" />
+    <Content Include="build\js\images\progress\progress.png" />
+    <Content Include="build\js\images\sessiontimeout\scrim.png" />
+    <Content Include="build\js\images\share\bookmarks.png" />
+    <Content Include="build\js\images\share\icons-share.gif" />
+    <Content Include="build\js\images\slideout\afficher.png" />
+    <Content Include="build\js\images\slideout\cacher.png" />
+    <Content Include="build\js\images\slideout\hide-cacher.png" />
+    <Content Include="build\js\images\slideout\hide.png" />
+    <Content Include="build\js\images\slideout\show-afficher.png" />
+    <Content Include="build\js\images\slideout\show.png" />
+    <Content Include="build\js\images\slider\blank.gif" />
+    <Content Include="build\js\images\slider\fd-handle-disabled.png" />
+    <Content Include="build\js\images\slider\fd-handle-glow.png" />
+    <Content Include="build\js\images\slider\fd-handle-no-value.png" />
+    <Content Include="build\js\images\slider\fd-handle-normal.png" />
+    <Content Include="build\js\images\slider\fd-slider-sprite.png" />
+    <Content Include="build\js\images\tabs\gradient.png" />
+    <Content Include="build\js\images\tabs\gradient2-style4.png" />
+    <Content Include="build\js\images\tabs\gradient2.png" />
+    <Content Include="build\js\images\tabs\gradient3.png" />
+    <Content Include="build\js\images\tabs\next.gif" />
+    <Content Include="build\js\images\tabs\pause.png" />
+    <Content Include="build\js\images\tabs\play.png" />
+    <Content Include="build\js\images\tabs\prev.gif" />
+    <Content Include="build\js\images\toolbar\gradient.png" />
+    <Content Include="build\js\images\toolbar\top_of_page.png" />
+    <Content Include="build\js\images\webfeeds\ajax-loader.gif" />
+    <Content Include="build\js\images\webfeeds\gradient.png" />
+    <Content Include="build\js\jquery.min.js" />
+    <Content Include="build\js\jquery.mobile\jquery.mobile.min.js" />
+    <Content Include="build\js\pe-ap-min.js" />
+    <Content Include="build\js\polyfills\datalist-min.js" />
+    <Content Include="build\js\polyfills\datepicker-min.js" />
+    <Content Include="build\js\polyfills\detailssummary-min.js" />
+    <Content Include="build\js\polyfills\html5shiv-min.js" />
+    <Content Include="build\js\polyfills\localstorage-min.js" />
+    <Content Include="build\js\polyfills\progress-min.js" />
+    <Content Include="build\js\polyfills\slider-min.js" />
+    <Content Include="build\js\settings.js" />
+    <Content Include="build\lib\ant-contrib-1.0b3.jar" />
+    <Content Include="build\lib\ant-jshint-0.3.1-deps.jar" />
+    <Content Include="build\lib\cssembed-0.4.5.jar" />
+    <Content Include="build\lib\datauri-0.2.2.jar" />
+    <Content Include="build\lib\yui-compressor-ant-task-0.5.7.jar" />
+    <Content Include="build\lib\yuicompressor-2.4.7.jar" />
+    <Content Include="build\theme-clf2-nsi2\css\theme-ie-min.css" />
+    <Content Include="build\theme-clf2-nsi2\css\theme-min.css" />
+    <Content Include="build\theme-clf2-nsi2\css\theme-serv-ie-min.css" />
+    <Content Include="build\theme-clf2-nsi2\css\theme-serv-min.css" />
+    <Content Include="build\theme-clf2-nsi2\css\theme-sp-pe-ie-min.css" />
+    <Content Include="build\theme-clf2-nsi2\css\theme-sp-pe-min.css" />
+    <Content Include="build\theme-clf2-nsi2\images\favicon.ico" />
+    <Content Include="build\theme-clf2-nsi2\images\lffl.gif" />
+    <Content Include="build\theme-clf2-nsi2\images\lffl.png" />
+    <Content Include="build\theme-clf2-nsi2\images\sig-eng.gif" />
+    <Content Include="build\theme-clf2-nsi2\images\sig-fra.gif" />
+    <Content Include="build\theme-clf2-nsi2\images\tphp.gif" />
+    <Content Include="build\theme-clf2-nsi2\images\wmms.gif" />
+    <Content Include="build\theme-clf2-nsi2\js\theme-min.js" />
+    <Content Include="build\theme-gcwu-fegc\css\jquery.mobile-min.css" />
+    <Content Include="build\theme-gcwu-fegc\css\theme-ie-min.css" />
+    <Content Include="build\theme-gcwu-fegc\css\theme-min.css" />
+    <Content Include="build\theme-gcwu-fegc\css\theme-serv-ie-min.css" />
+    <Content Include="build\theme-gcwu-fegc\css\theme-serv-min.css" />
+    <Content Include="build\theme-gcwu-fegc\css\theme-sp-pe-ie-min.css" />
+    <Content Include="build\theme-gcwu-fegc\css\theme-sp-pe-min.css" />
+    <Content Include="build\theme-gcwu-fegc\images\bcrumb-mobile.png" />
+    <Content Include="build\theme-gcwu-fegc\images\bcrumb.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\bg-minister-bottom.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\bg-minister-top.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\bg-waves.jpg" />
+    <Content Include="build\theme-gcwu-fegc\images\content-deco-ie.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\content-deco-side.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\favicon.ico" />
+    <Content Include="build\theme-gcwu-fegc\images\header-bg-ie.jpg" />
+    <Content Include="build\theme-gcwu-fegc\images\header-bg.jpg" />
+    <Content Include="build\theme-gcwu-fegc\images\header-leaf.jpg" />
+    <Content Include="build\theme-gcwu-fegc\images\icons-18-black.png" />
+    <Content Include="build\theme-gcwu-fegc\images\icons-18-white.png" />
+    <Content Include="build\theme-gcwu-fegc\images\icons-36-black.png" />
+    <Content Include="build\theme-gcwu-fegc\images\icons-36-white.png" />
+    <Content Include="build\theme-gcwu-fegc\images\menu-arrow.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\menu-bg.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\menu-border.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\search-button-focus.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\search-button.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\sft-deco-ie.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\sft-deco-leaf.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\sft-deco-side.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\sft-deco.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\sig-eng-bg.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\sig-eng.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\sig-fra-bg.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\sig-fra.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\sl_feeds.png" />
+    <Content Include="build\theme-gcwu-fegc\images\sl_twitter.png" />
+    <Content Include="build\theme-gcwu-fegc\images\sl_youtube.png" />
+    <Content Include="build\theme-gcwu-fegc\images\sp-pe-bg-ie.jpg" />
+    <Content Include="build\theme-gcwu-fegc\images\sp-pe-bg.jpg" />
+    <Content Include="build\theme-gcwu-fegc\images\sp-pe-button-focus.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\sp-pe-button.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\sp-pe-leaf.jpg" />
+    <Content Include="build\theme-gcwu-fegc\images\wmms-bg.gif" />
+    <Content Include="build\theme-gcwu-fegc\images\wmms.gif" />
+    <Content Include="build\theme-gcwu-fegc\js\theme-min.js" />
+    <Content Include="build\theme-gcwu-intranet\css\jquery.mobile-min.css" />
+    <Content Include="build\theme-gcwu-intranet\css\theme-ie-min.css" />
+    <Content Include="build\theme-gcwu-intranet\css\theme-min.css" />
+    <Content Include="build\theme-gcwu-intranet\css\theme-serv-ie-min.css" />
+    <Content Include="build\theme-gcwu-intranet\css\theme-serv-min.css" />
+    <Content Include="build\theme-gcwu-intranet\css\theme-sp-pe-ie-min.css" />
+    <Content Include="build\theme-gcwu-intranet\css\theme-sp-pe-min.css" />
+    <Content Include="build\theme-gcwu-intranet\images\core\gcwu-intranetnb-sprite.gif" />
+    <Content Include="build\theme-gcwu-intranet\images\core\top-section.png" />
+    <Content Include="build\theme-gcwu-intranet\images\gcwu-bnr-in.png" />
+    <Content Include="build\theme-gcwu-intranet\images\gcwu-bnr.png" />
+    <Content Include="build\theme-gcwu-intranet\images\gcwu-intranetnb-bar.gif" />
+    <Content Include="build\theme-gcwu-intranet\images\gcwu-intranetnb-center.gif" />
+    <Content Include="build\theme-gcwu-intranet\images\gcwu-intranetnb-left.gif" />
+    <Content Include="build\theme-gcwu-intranet\images\gcwu-intranetnb-right.gif" />
+    <Content Include="build\theme-gcwu-intranet\images\gcwu-nav-current.gif" />
+    <Content Include="build\theme-gcwu-intranet\images\gcwu-psnb.gif" />
+    <Content Include="build\theme-gcwu-intranet\images\gcwu-sft-in.png" />
+    <Content Include="build\theme-gcwu-intranet\images\gcwu-sft.png" />
+    <Content Include="build\theme-gcwu-intranet\images\gcwu-subsection-1.gif" />
+    <Content Include="build\theme-gcwu-intranet\images\gcwu-subsite-1.gif" />
+    <Content Include="build\theme-gcwu-intranet\images\lang-active.gif" />
+    <Content Include="build\theme-gcwu-intranet\images\menu-drop-down.gif" />
+    <Content Include="build\theme-gcwu-intranet\images\menu-drop-down.png" />
+    <Content Include="build\theme-gcwu-intranet\js\theme-min.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="demos\arb-rra\arb-rra-eng.html" />
+    <Content Include="demos\arb-rra\arb-rra-fra.html" />
+    <Content Include="demos\arb-rra\arb-rra-planAccess-eng.html" />
+    <Content Include="demos\arb-rra\arb-rra-planAccess-fra.html" />
+    <Content Include="demos\archived\archived-eng.html" />
+    <Content Include="demos\archived\archived-fra.html" />
+    <Content Include="demos\charts\complex-eng.html" />
+    <Content Include="demos\charts\simple-eng.html" />
+    <Content Include="demos\charts\simpleCustomized-eng.html" />
+    <Content Include="demos\datalist\datalist-eng.html" />
+    <Content Include="demos\datalist\datalist-fra.html" />
+    <Content Include="demos\datepicker\datepicker-eng.html" />
+    <Content Include="demos\datepicker\datepicker-fra.html" />
+    <Content Include="demos\details\details-eng.html" />
+    <Content Include="demos\details\details-fra.html" />
+    <Content Include="demos\eventscalendar\eventscalendar-eng.html" />
+    <Content Include="demos\eventscalendar\eventscalendar-fra.html" />
+    <Content Include="demos\feedback\feedback-eng.html" />
+    <Content Include="demos\feedback\feedback-fra.html" />
+    <Content Include="demos\footnotes\footnotes-eng.html" />
+    <Content Include="demos\footnotes\footnotes-fra.html" />
+    <Content Include="demos\formvalid\formvalid-eng.html" />
+    <Content Include="demos\formvalid\formvalid-fra.html" />
+    <Content Include="demos\grids\grid-base-eng.html" />
+    <Content Include="demos\grids\grid-base-full-eng.html" />
+    <Content Include="demos\grids\grid-basic-eng.html" />
+    <Content Include="demos\grids\grid-border-eng.html" />
+    <Content Include="demos\grids\grid-button-eng.html" />
+    <Content Include="demos\grids\grid-color-eng.html" />
+    <Content Include="demos\grids\grid-form-eng.html" />
+    <Content Include="demos\grids\grid-icon-eng.html" />
+    <Content Include="demos\grids\grid-image-eng.html" />
+    <Content Include="demos\grids\grid-message-eng.html" />
+    <Content Include="demos\grids\grid-module-eng.html" />
+    <Content Include="demos\grids\grid-opacity-eng.html" />
+    <Content Include="demos\grids\grid-other-eng.html" />
+    <Content Include="demos\grids\grid-position-eng.html" />
+    <Content Include="demos\grids\grid-proximity-eng.html" />
+    <Content Include="demos\grids\grid-specialty-eng.html" />
+    <Content Include="demos\grids\grid-structure-eng.html" />
+    <Content Include="demos\grids\grid-table-eng.html" />
+    <Content Include="demos\grids\grid-text-eng.html" />
+    <Content Include="demos\grids\images\1col.gif" />
+    <Content Include="demos\grids\images\a1.jpg" />
+    <Content Include="demos\grids\images\a2.jpg" />
+    <Content Include="demos\grids\images\a3.jpg" />
+    <Content Include="demos\grids\images\a4.jpg" />
+    <Content Include="demos\grids\images\a5.jpg" />
+    <Content Include="demos\grids\images\a6.jpg" />
+    <Content Include="demos\grids\images\a7.jpg" />
+    <Content Include="demos\grids\images\border.gif" />
+    <Content Include="demos\grids\images\equalHeights.gif" />
+    <Content Include="demos\grids\images\grid12-full.gif" />
+    <Content Include="demos\grids\images\grid12-leftmenu.gif" />
+    <Content Include="demos\grids\images\grids-8-12-grid12.gif" />
+    <Content Include="demos\grids\images\grids-8-12-span2-4.gif" />
+    <Content Include="demos\grids\images\grids-8-12-span2.gif" />
+    <Content Include="demos\grids\images\grids-8-12-span3.gif" />
+    <Content Include="demos\grids\images\grids-8-12.gif" />
+    <Content Include="demos\grids\images\photo.jpg" />
+    <Content Include="demos\grids\images\placeholder.gif" />
+    <Content Include="demos\grids\images\placeholder2.gif" />
+    <Content Include="demos\grids\images\placeholder3.gif" />
+    <Content Include="demos\grids\images\position-mini-1.png" />
+    <Content Include="demos\grids\images\position-mini-2.png" />
+    <Content Include="demos\grids\images\position-mini-3.png" />
+    <Content Include="demos\grids\images\position.png" />
+    <Content Include="demos\grids\images\poster.jpg" />
+    <Content Include="demos\grids\images\tick.gif" />
+    <Content Include="demos\grids\images\x.gif" />
+    <Content Include="demos\index-eng.html" />
+    <Content Include="demos\index-fra.html" />
+    <Content Include="demos\langselect\lang-eng.html" />
+    <Content Include="demos\langselect\lang-fra.html" />
+    <Content Include="demos\langselect\lang-js-eng.html" />
+    <Content Include="demos\langselect\lang-js-fra.html" />
+    <Content Include="demos\langselect\langselect\lang.asp" />
+    <Content Include="demos\lightbox\ajax\ajax-eng.html" />
+    <Content Include="demos\lightbox\ajax\ajax-fra.html" />
+    <Content Include="demos\lightbox\images\1_b.jpg" />
+    <Content Include="demos\lightbox\images\1_s.jpg" />
+    <Content Include="demos\lightbox\images\2_b.jpg" />
+    <Content Include="demos\lightbox\images\2_s.jpg" />
+    <Content Include="demos\lightbox\images\3_b.jpg" />
+    <Content Include="demos\lightbox\images\3_s.jpg" />
+    <Content Include="demos\lightbox\images\4_b.jpg" />
+    <Content Include="demos\lightbox\images\4_s.jpg" />
+    <Content Include="demos\lightbox\images\5_b.jpg" />
+    <Content Include="demos\lightbox\images\5_s.jpg" />
+    <Content Include="demos\lightbox\lightbox-eng.html" />
+    <Content Include="demos\lightbox\lightbox-fra.html" />
+    <Content Include="demos\mathlib\images\image004.gif" />
+    <Content Include="demos\mathlib\images\image008.gif" />
+    <Content Include="demos\mathlib\mathlib-complex-fra.html" />
+    <Content Include="demos\mathlib\mathlib-eng.html" />
+    <Content Include="demos\mathlib\mathlib-fra.html" />
+    <Content Include="demos\menubar\hsitenavbar-eng.html" />
+    <Content Include="demos\menubar\hsitenavbar-fra.html" />
+    <Content Include="demos\menubar\megamenu-eng.html" />
+    <Content Include="demos\menubar\megamenu-fra.html" />
+    <Content Include="demos\multimedia\captions-eng.xml" />
+    <Content Include="demos\multimedia\captions-fra.xml" />
+    <Content Include="demos\multimedia\mediaplayer-transcript_captions-eng.html" />
+    <Content Include="demos\multimedia\mediaplayer-transcript_captions-fra.html" />
+    <Content Include="demos\multimedia\multimedia-audio-eng.html" />
+    <Content Include="demos\multimedia\multimedia-audio-fra.html" />
+    <Content Include="demos\multimedia\multimedia-eng.html" />
+    <Content Include="demos\multimedia\multimedia-fra.html" />
+    <Content Include="demos\opt-cont\app-eng.html" />
+    <Content Include="demos\opt-cont\clr-eng.html" />
+    <Content Include="demos\opt-cont\dk-sv-eng.html" />
+    <Content Include="demos\opt-cont\frm-eng.html" />
+    <Content Include="demos\opt-cont\hdg-eng.html" />
+    <Content Include="demos\opt-cont\images\img-clr.png" />
+    <Content Include="demos\opt-cont\images\img-cplx.jpg" />
+    <Content Include="demos\opt-cont\images\img-decor-photo.jpg" />
+    <Content Include="demos\opt-cont\images\img-decor.gif" />
+    <Content Include="demos\opt-cont\images\img-lin.gif" />
+    <Content Include="demos\opt-cont\images\img-news-nouvelles.gif" />
+    <Content Include="demos\opt-cont\images\img-org-eng.jpg" />
+    <Content Include="demos\opt-cont\images\img-org-fra.jpg" />
+    <Content Include="demos\opt-cont\images\img-pie-eng.jpg" />
+    <Content Include="demos\opt-cont\images\img-pie-fra.jpg" />
+    <Content Include="demos\opt-cont\images\img-spl-dog-chien.jpg" />
+    <Content Include="demos\opt-cont\images\img-spl.jpg" />
+    <Content Include="demos\opt-cont\images\img-txt-eng.jpg" />
+    <Content Include="demos\opt-cont\images\pdf.gif" />
+    <Content Include="demos\opt-cont\images\sport.gif" />
+    <Content Include="demos\opt-cont\images\yes-oui.gif" />
+    <Content Include="demos\opt-cont\img-eng.html" />
+    <Content Include="demos\opt-cont\img-org-desc-eng.html" />
+    <Content Include="demos\opt-cont\index-eng.html" />
+    <Content Include="demos\opt-cont\kb-cv-eng.html" />
+    <Content Include="demos\opt-cont\lin-eng.html" />
+    <Content Include="demos\opt-cont\qlg-eng.html" />
+    <Content Include="demos\opt-cont\smm-eng.html" />
+    <Content Include="demos\opt-cont\tbl-eng.html" />
+    <Content Include="demos\opt-cont\tbl-simp-eng.html" />
+    <Content Include="demos\opt-cont\wcag-eng.html" />
+    <Content Include="demos\php\index-eng.html" />
+    <Content Include="demos\php\index-fra.html" />
+    <Content Include="demos\prettify\prettify-eng.html" />
+    <Content Include="demos\prettify\prettify-fra.html" />
+    <Content Include="demos\progress\progress-eng.html" />
+    <Content Include="demos\progress\progress-fra.html" />
+    <Content Include="demos\sessiontimeout\sessiontimeout-eng.html" />
+    <Content Include="demos\sessiontimeout\sessiontimeout-fra.html" />
+    <Content Include="demos\share\share-eng.html" />
+    <Content Include="demos\share\share-filtered-eng.html" />
+    <Content Include="demos\share\share-filtered-fra.html" />
+    <Content Include="demos\share\share-fra.html" />
+    <Content Include="demos\slideout\images\afficher.png" />
+    <Content Include="demos\slideout\images\cacher.png" />
+    <Content Include="demos\slideout\images\hide-cacher.png" />
+    <Content Include="demos\slideout\images\hide.png" />
+    <Content Include="demos\slideout\images\show-afficher.png" />
+    <Content Include="demos\slideout\images\show.png" />
+    <Content Include="demos\slideout\slideout-eng.html" />
+    <Content Include="demos\slideout\slideout-fra.html" />
+    <Content Include="demos\slider\slider-eng.html" />
+    <Content Include="demos\slider\slider-fra.html" />
+    <Content Include="demos\ssi\index-eng.html" />
+    <Content Include="demos\ssi\index-fra.html" />
+    <Content Include="demos\tableparser\About-the-Table-Usability-Concept.html" />
+    <Content Include="demos\tableparser\colgroupheader-techniques.html" />
+    <Content Include="demos\tableparser\colgroupsummary-techniques.html" />
+    <Content Include="demos\tableparser\colheader-description-techniques.html" />
+    <Content Include="demos\tableparser\columngroup.html" />
+    <Content Include="demos\tableparser\Data-Cell.html" />
+    <Content Include="demos\tableparser\datacolgroup-techniques.html" />
+    <Content Include="demos\tableparser\docs-eng.html" />
+    <Content Include="demos\tableparser\ExtendedDefinition.html" />
+    <Content Include="demos\tableparser\financial.html" />
+    <Content Include="demos\tableparser\headercolgroupstructure-techniques.html" />
+    <Content Include="demos\tableparser\headerrowgroupstructure-techniques.html" />
+    <Content Include="demos\tableparser\How-to-use-colgroup-element.html" />
+    <Content Include="demos\tableparser\images\CaseStudie3-visualcontext.png" />
+    <Content Include="demos\tableparser\images\ValeurNutritive-DataRowGroup.jpg" />
+    <Content Include="demos\tableparser\images\ValeurNutritive-DataRowGroupARelationship.jpg" />
+    <Content Include="demos\tableparser\images\ValeurNutritive-DataSummaryRowGroup.jpg" />
+    <Content Include="demos\tableparser\images\ValeurNutritive-g-mg-DataCell.jpg" />
+    <Content Include="demos\tableparser\images\ValeurNutritive-original.jpg" />
+    <Content Include="demos\tableparser\images\ValeurNutritive-percent-DataCell.jpg" />
+    <Content Include="demos\tableparser\images\ValeurNutritive-RowGroupHeading.jpg" />
+    <Content Include="demos\tableparser\images\ValeurNutritive-SubRowGroup.jpg" />
+    <Content Include="demos\tableparser\images\ValeurNutritive-SubRowGroupSummary.jpg" />
+    <Content Include="demos\tableparser\images\ValeurNutritive-SummaryDataCell.jpg" />
+    <Content Include="demos\tableparser\images\ValeurNutritive-SummaryRowGroup.jpg" />
+    <Content Include="demos\tableparser\images\ValeurNutritive-TableCaption.jpg" />
+    <Content Include="demos\tableparser\images\ValeurNutritive-TableDescription.jpg" />
+    <Content Include="demos\tableparser\img-casestudies1.jpg" />
+    <Content Include="demos\tableparser\img-keycell.jpg" />
+    <Content Include="demos\tableparser\index-eng.html" />
+    <Content Include="demos\tableparser\js\sel-cell.js" />
+    <Content Include="demos\tableparser\js\sel-col.js" />
+    <Content Include="demos\tableparser\js\sel-collevel.js" />
+    <Content Include="demos\tableparser\js\sel-data.js" />
+    <Content Include="demos\tableparser\js\sel-description.js" />
+    <Content Include="demos\tableparser\js\sel-keycell.js" />
+    <Content Include="demos\tableparser\js\sel-row.js" />
+    <Content Include="demos\tableparser\js\sel-rowlevel.js" />
+    <Content Include="demos\tableparser\js\sel-summary.js" />
+    <Content Include="demos\tableparser\js\sel-tblheader.js" />
+    <Content Include="demos\tableparser\Key-Description-Cell-Table-Row.html" />
+    <Content Include="demos\tableparser\keycell-techniques.html" />
+    <Content Include="demos\tableparser\layoutcell-techniques.html" />
+    <Content Include="demos\tableparser\rowgroupheader-description-techniques.html" />
+    <Content Include="demos\tableparser\rowgrouping-techniques.html" />
+    <Content Include="demos\tableparser\rowheader-description-techniques.html" />
+    <Content Include="demos\tableparser\RowLevel.html" />
+    <Content Include="demos\tableparser\summariesrowgroup-techniques.html" />
+    <Content Include="demos\tableparser\Summary-Cell.html" />
+    <Content Include="demos\tableparser\SummaryRowGroup.html" />
+    <Content Include="demos\tableparser\Table-CaseStudies-2.html" />
+    <Content Include="demos\tableparser\Table-CaseStudies-3.html" />
+    <Content Include="demos\tableparser\Table-CaseStudies.html" />
+    <Content Include="demos\tableparser\techniques.html" />
+    <Content Include="demos\tableparser\validator-htmltable.html" />
+    <Content Include="demos\tableparser\Witch_Zebra_You_Like.html" />
+    <Content Include="demos\tabs\images\demo1-eng.jpg" />
+    <Content Include="demos\tabs\images\demo1-fra.jpg" />
+    <Content Include="demos\tabs\images\demo2-eng.jpg" />
+    <Content Include="demos\tabs\images\demo2-fra.jpg" />
+    <Content Include="demos\tabs\images\demo3-eng.jpg" />
+    <Content Include="demos\tabs\images\demo3-fra.jpg" />
+    <Content Include="demos\tabs\images\demo4-eng.jpg" />
+    <Content Include="demos\tabs\images\demo4-fra.jpg" />
+    <Content Include="demos\tabs\images\demo5-eng.jpg" />
+    <Content Include="demos\tabs\images\demo5-fra.jpg" />
+    <Content Include="demos\tabs\tabs-eng.html" />
+    <Content Include="demos\tabs\tabs-fra.html" />
+    <Content Include="demos\texthighlight\texthighlight-eng.html" />
+    <Content Include="demos\texthighlight\texthighlight-fra.html" />
+    <Content Include="demos\theme-clf2-nsi2\1col-theme-clf2-nsi2-eng.html" />
+    <Content Include="demos\theme-clf2-nsi2\1col-theme-clf2-nsi2-fra.html" />
+    <Content Include="demos\theme-clf2-nsi2\2col-theme-clf2-nsi2-eng.html" />
+    <Content Include="demos\theme-clf2-nsi2\2col-theme-clf2-nsi2-fra.html" />
+    <Content Include="demos\theme-clf2-nsi2\3col-theme-clf2-nsi2-eng.html" />
+    <Content Include="demos\theme-clf2-nsi2\3col-theme-clf2-nsi2-fra.html" />
+    <Content Include="demos\theme-clf2-nsi2\images\favicon.ico" />
+    <Content Include="demos\theme-clf2-nsi2\images\header-entete.jpg" />
+    <Content Include="demos\theme-clf2-nsi2\images\lffl.gif" />
+    <Content Include="demos\theme-clf2-nsi2\images\lffl.png" />
+    <Content Include="demos\theme-clf2-nsi2\images\sig-eng.gif" />
+    <Content Include="demos\theme-clf2-nsi2\images\sig-fra.gif" />
+    <Content Include="demos\theme-clf2-nsi2\images\tphp.gif" />
+    <Content Include="demos\theme-clf2-nsi2\images\wmms.gif" />
+    <Content Include="demos\theme-clf2-nsi2\images\wp-pa-home-accueil-old.jpg" />
+    <Content Include="demos\theme-clf2-nsi2\images\wp-pa-home-accueil.jpg" />
+    <Content Include="demos\theme-clf2-nsi2\images\wp-pa.jpg" />
+    <Content Include="demos\theme-clf2-nsi2\index-eng.html" />
+    <Content Include="demos\theme-clf2-nsi2\index-fra.html" />
+    <Content Include="demos\theme-clf2-nsi2\servpage-theme-clf2-nsi2-eng-fra.html" />
+    <Content Include="demos\theme-clf2-nsi2\servpage-theme-clf2-nsi2-fra-eng.html" />
+    <Content Include="demos\theme-clf2-nsi2\wp-pa-theme-clf2-nsi2-eng-fra.html" />
+    <Content Include="demos\theme-clf2-nsi2\wp-pa-theme-clf2-nsi2-fra-eng.html" />
+    <Content Include="demos\theme-gcwu-fegc\application-eng.html" />
+    <Content Include="demos\theme-gcwu-fegc\application-fra.html" />
+    <Content Include="demos\theme-gcwu-fegc\application-nosearchlang-eng.html" />
+    <Content Include="demos\theme-gcwu-fegc\application-nosearchlang-fra.html" />
+    <Content Include="demos\theme-gcwu-fegc\application-nosearchlang-secnav1-eng.html" />
+    <Content Include="demos\theme-gcwu-fegc\application-nosearchlang-secnav1-fra.html" />
+    <Content Include="demos\theme-gcwu-fegc\application-nosearchlang-secnav2-eng.html" />
+    <Content Include="demos\theme-gcwu-fegc\application-nosearchlang-secnav2-fra.html" />
+    <Content Include="demos\theme-gcwu-fegc\application-secnav1-eng.html" />
+    <Content Include="demos\theme-gcwu-fegc\application-secnav1-fra.html" />
+    <Content Include="demos\theme-gcwu-fegc\application-secnav2-eng.html" />
+    <Content Include="demos\theme-gcwu-fegc\application-secnav2-fra.html" />
+    <Content Include="demos\theme-gcwu-fegc\cont-eng.html" />
+    <Content Include="demos\theme-gcwu-fegc\cont-fra.html" />
+    <Content Include="demos\theme-gcwu-fegc\cont-secnav1-eng.html" />
+    <Content Include="demos\theme-gcwu-fegc\cont-secnav1-fra.html" />
+    <Content Include="demos\theme-gcwu-fegc\cont-secnav2-eng.html" />
+    <Content Include="demos\theme-gcwu-fegc\cont-secnav2-fra.html" />
+    <Content Include="demos\theme-gcwu-fegc\home-accueil-eng.html" />
+    <Content Include="demos\theme-gcwu-fegc\home-accueil-fra.html" />
+    <Content Include="demos\theme-gcwu-fegc\images\minister.JPG" />
+    <Content Include="demos\theme-gcwu-fegc\images\prio1-eng.png" />
+    <Content Include="demos\theme-gcwu-fegc\images\prio1-fra.png" />
+    <Content Include="demos\theme-gcwu-fegc\images\prio2-eng.png" />
+    <Content Include="demos\theme-gcwu-fegc\images\prio2-fra.png" />
+    <Content Include="demos\theme-gcwu-fegc\images\prio3-eng.png" />
+    <Content Include="demos\theme-gcwu-fegc\images\prio3-fra.png" />
+    <Content Include="demos\theme-gcwu-fegc\images\video.jpg" />
+    <Content Include="demos\theme-gcwu-fegc\index-eng.html" />
+    <Content Include="demos\theme-gcwu-fegc\index-fra.html" />
+    <Content Include="demos\theme-gcwu-fegc\serv-eng-fra.html" />
+    <Content Include="demos\theme-gcwu-fegc\serv-eng.html" />
+    <Content Include="demos\theme-gcwu-fegc\serv-fra-eng.html" />
+    <Content Include="demos\theme-gcwu-fegc\serv-fra.html" />
+    <Content Include="demos\theme-gcwu-fegc\serv-mult-eng-fra.html" />
+    <Content Include="demos\theme-gcwu-fegc\serv-mult-fra-eng.html" />
+    <Content Include="demos\theme-gcwu-fegc\sp-pe-eng-fra.html" />
+    <Content Include="demos\theme-gcwu-fegc\sp-pe-fra-eng.html" />
+    <Content Include="demos\theme-gcwu-fegc\sp-pe-mult-eng-fra.html" />
+    <Content Include="demos\theme-gcwu-fegc\sp-pe-mult-fra-eng.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-eng.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-fra.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-secnav1-eng.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-secnav1-fra.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-secnav1-sitemenu-eng.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-secnav1-sitemenu-fra.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-secnav1-subsite-eng.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-secnav1-subsite-fra.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-secnav1-subsite-sitemenu-eng.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-secnav1-subsite-sitemenu-fra.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-secnav2-eng.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-secnav2-fra.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-secnav2-sitemenu-eng.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-secnav2-sitemenu-fra.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-secnav2-subsite-eng.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-secnav2-subsite-fra.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-secnav2-subsite-sitemenu-eng.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-secnav2-subsite-sitemenu-fra.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-sitemenu-eng.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-sitemenu-fra.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-subsite-eng.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-subsite-fra.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-subsite-sitemenu-eng.html" />
+    <Content Include="demos\theme-gcwu-intranet\cont-subsite-sitemenu-fra.html" />
+    <Content Include="demos\theme-gcwu-intranet\index-eng.html" />
+    <Content Include="demos\theme-gcwu-intranet\index-fra.html" />
+    <Content Include="demos\theme-gcwu-intranet\serv-eng-fra.html" />
+    <Content Include="demos\theme-gcwu-intranet\serv-eng.html" />
+    <Content Include="demos\theme-gcwu-intranet\serv-fra-eng.html" />
+    <Content Include="demos\theme-gcwu-intranet\serv-fra.html" />
+    <Content Include="demos\theme-gcwu-intranet\sp-pe-eng-fra.html" />
+    <Content Include="demos\theme-gcwu-intranet\sp-pe-fra-eng.html" />
+    <Content Include="demos\wamethod\wamethod-AAA-eng.html" />
+    <Content Include="demos\wamethod\wamethod-AAA-fra.html" />
+    <Content Include="demos\wamethod\wamethod-eng.html" />
+    <Content Include="demos\wamethod\wamethod-fra.html" />
+    <Content Include="demos\webfeeds\webfeeds-eng.html" />
+    <Content Include="demos\webfeeds\webfeeds-fra.html" />
+    <Content Include="demos\zebra\columnhightlight.html" />
+    <Content Include="demos\zebra\invoice.html" />
+    <Content Include="demos\zebra\rowlevelwithsummary.html" />
+    <Content Include="demos\zebra\simple.html" />
+    <Content Include="demos\zebra\simplegrouping.html" />
+    <Content Include="demos\zebra\zebra-eng.html" />
+    <Content Include="demos\zebra\zebra-fra.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build\build-tasks.properties" />
+    <None Include="build\compile.rb" />
+    <None Include="build\config.rb" />
+    <None Include="build\jshint.globals.properties" />
+    <None Include="build\README.md" />
+    <None Include="demos\includes\menu-eng.inc" />
+    <None Include="demos\includes\menu-fra.inc" />
+    <None Include="demos\langselect\langselect\lang" />
+    <None Include="demos\langselect\langselect\lang-inc.php" />
+    <None Include="demos\langselect\langselect\lang-inc.shtm" />
+    <None Include="demos\langselect\langselect\lang.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60284</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
