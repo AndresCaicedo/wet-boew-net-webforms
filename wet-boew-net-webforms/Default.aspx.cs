@@ -11,7 +11,7 @@ namespace wet_boew_net_webforms
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Response.Redirect("WetIntranet.aspx");
         }
     }
 }
