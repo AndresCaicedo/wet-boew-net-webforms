@@ -318,6 +318,11 @@
     <Content Include="WetIntranet.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\GCWUIntranet.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GCWUIntranet.resx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -344,7 +349,12 @@
       <DependentUpon>WetIntranet.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GCWUIntranet.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GCWUIntranet.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="GCWU-Intranet.Master" />
   </ItemGroup>
