@@ -30,4 +30,27 @@
 <li><input type="submit" value="Input" class="button"></li>
 <li><a href="#" class="button">Link</a></li>
 </ul>
+<h2>My Tabbed Interface</h2>
+    <div class="wet-boew-tabbedinterface tabs-style-1">
+    <ul class="tabs">
+    <li class="default"><a href="#tabs1_1">My Documents</a></li>
+    <li><a href="#tabs1_2">Initial Reading</a></li>
+    <li><a href="#tabs1_3">Review By Coordinator</a></li>
+    <li><a href="#tabs1_4">Approved</a></li>
+    </ul>
+    <div class="tabs-panel">
+    <div id="tabs1_1">
+    <p>This is my personal list of documents.  It's important to follow all the directions provided.</p>
+    </div>
+    <div id="tabs1_2">
+    <p>The document has just started its review process.  We need to consider what changes need to be made, what revisions are applicable at this time.</p>
+    </div>
+    <div id="tabs1_3">
+    <p>Have you followed through on all your objectives?  Are there any issues we still need to address?</p>
+    </div>
+    <div id="tabs1_4">
+    <p>Approved.  No further changes after this point.</p>
+    </div>
+    </div>
+    </div>
 </asp:Content>
