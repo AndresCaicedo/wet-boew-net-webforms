@@ -40,7 +40,29 @@
     </ul>
     <div class="tabs-panel">
     <div id="tabs1_1">
+    <div class="span-4">
     <p>This is my personal list of documents.  It's important to follow all the directions provided.</p>
+    <p>Another line of information.</p>
+    <p>How best to use this Framework?  Consider using the following steps to reproduce your activities extra long work non-sensical sentences.</p>
+    </div>
+    <div class="span-3 module-comment">
+    <p class="background-dark">3 Comments</p>
+    <ol class="wet-boew-zebra">
+    <li>
+    <div>Jessica</div>
+    <div>November 19, 2009</div>
+    This is placeholder text. This is placeholder text. This is placeholder text. This is placeholder text. This is placeholder text. This is placeholder text. This is placeholder text.</li>
+    <li>
+    <div>Mihn</div>
+    <div>November 19, 2009</div>
+    This is placeholder text. This is placeholder text. This is placeholder text. This is placeholder text. This is placeholder text. This is placeholder text. This is placeholder text. blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</li>
+    <li>
+    <div>Eddie</div>
+    <div>November 19, 2009</div>
+    This is placeholder text. This is placeholder text. This is placeholder text. This is placeholder text. This is placeholder text. This is placeholder text. This is placeholder text.</li>
+    </ol>
+    </div>
+    <div class="clear"></div>
     </div>
     <div id="tabs1_2">
     <p>The document has just started its review process.  We need to consider what changes need to be made, what revisions are applicable at this time.</p>
@@ -52,5 +74,10 @@
     <p>Approved.  No further changes after this point.</p>
     </div>
     </div>
+    </div>
+    <div class="clear"></div>
+    <div class="module-info span-3">
+    <h3><span class="color-dark">Refer:</span> Lorem ipsum dolor sit amet</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
 </asp:Content>
