@@ -2,6 +2,6 @@
 <html>
 <body>
 <h1>Default page</h1>
-<p>Default page</p>
+<p>Default page -- Hello</p>
 </body>
 </html>
