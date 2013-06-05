@@ -306,6 +306,7 @@
     <Content Include="build\theme-gcwu-intranet\images\menu-drop-down.gif" />
     <Content Include="build\theme-gcwu-intranet\images\menu-drop-down.png" />
     <Content Include="build\theme-gcwu-intranet\js\theme-min.js" />
+    <Content Include="CustomServerValidate.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -322,6 +323,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>GCWUIntranet.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomServerValidate.aspx.cs">
+      <DependentUpon>CustomServerValidate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomServerValidate.aspx.designer.cs">
+      <DependentUpon>CustomServerValidate.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
