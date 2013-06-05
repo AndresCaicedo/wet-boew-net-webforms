@@ -11,23 +11,5 @@ namespace wet_boew_net_webforms {
     
     
     public partial class WetIntranet {
-        
-        /// <summary>
-        /// TestButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button TestButton;
-        
-        /// <summary>
-        /// TestButton2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button TestButton2;
     }
 }

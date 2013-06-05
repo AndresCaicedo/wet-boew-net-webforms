@@ -19,7 +19,7 @@
     <li><input type="submit" value="Button 2 a4 aet 5ae5" class="button" onclick="alert('button 2');" /></li>
     <li><input type="submit" value="Button 3 ae5t adf  " class="button" onclick="alert('button 3');" /></li>
     </ul>
-    <p>This is my personal list of documents.  It's important to follow all the directions provided.</p>
+    <p>This is my personal list of documents. <b>I have added this text.</b> It's important to follow all the directions provided.</p>
     <p>Another line of information.</p>
     <p>How best to use this Framework?  Consider using the following steps to reproduce your activities extra long work non-sensical sentences.</p>
     </div>
