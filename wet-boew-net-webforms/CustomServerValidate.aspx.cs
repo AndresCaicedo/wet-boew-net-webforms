@@ -19,7 +19,7 @@ namespace wet_boew_net_webforms
             if (e.Value == "cool")
             {
                 e.IsValid = true;
-                SuccessLiteral.Text = "Yay! You typed in the correct word!";
+                SuccessLiteral.Text = "Well done, You typed in the correct word!";
             }
             else
             {
