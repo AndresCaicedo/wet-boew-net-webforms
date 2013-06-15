@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GCWU-Intranet.Master" AutoEventWireup="true" CodeBehind="WetIntranet.aspx.cs" Inherits="wet_boew_net_webforms.WetIntranet" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="CustomCSSPlaceHolder" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
 
 <h2>My Tabbed Interface</h2>
     <div class="wet-boew-tabbedinterface tabs-style-1">
@@ -59,3 +59,4 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
 </asp:Content>
+<asp:Content ContentPlaceHolderID="CustomScriptsPlaceHolder" runat="server"></asp:Content>

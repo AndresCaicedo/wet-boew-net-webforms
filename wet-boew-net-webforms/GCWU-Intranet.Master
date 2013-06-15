@@ -37,7 +37,7 @@ www.tbs.gc.ca/ws-nw/wet-boew/terms / www.sct.gc.ca/ws-nw/wet-boew/conditions -->
 <!--<![endif]-->
 
 <!-- CustomScriptsCSSStart -->
-<asp:ContentPlaceHolder ID="head" runat="server">
+<asp:ContentPlaceHolder ID="CustomCSSPlaceHolder" runat="server">
 </asp:ContentPlaceHolder>
 <!-- CustomScriptsCSSEnd -->
 </head>
@@ -105,7 +105,7 @@ www.tbs.gc.ca/ws-nw/wet-boew/terms / www.sct.gc.ca/ws-nw/wet-boew/conditions -->
 <!-- MainContentStart -->
     <form id="form2" runat="server">
     <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
         <h1 id="wb-cont">GC Web Usability Intranet theme</h1>
 
 <div class="span-4">
@@ -165,7 +165,7 @@ www.tbs.gc.ca/ws-nw/wet-boew/terms / www.sct.gc.ca/ws-nw/wet-boew/conditions -->
 <dt>Date modified:</dt><dd><span><time>2012-09-17</time></span></dd>
 </dl>
 <div class="clear"></div>
-        </asp:ContentPlaceHolder>
+        
     </div>
     </form>
 
@@ -219,6 +219,8 @@ www.tbs.gc.ca/ws-nw/wet-boew/terms / www.sct.gc.ca/ws-nw/wet-boew/conditions -->
 <script src="/dist/theme-gcwu-intranet/js/theme-min.js"></script>
 <script src="/dist/js/settings.js"></script>
 <script src="/dist/js/pe-ap-min.js"></script>
+<script src="Scripts/knockout-2.2.1.js"></script>
 <!-- ScriptsEnd -->
+<asp:ContentPlaceHolder ID="CustomScriptsPlaceHolder" runat="server"></asp:ContentPlaceHolder>
 </body>
 </html>

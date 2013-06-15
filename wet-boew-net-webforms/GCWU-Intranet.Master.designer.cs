@@ -13,13 +13,13 @@ namespace wet_boew_net_webforms {
     public partial class GCWU_Intranet {
         
         /// <summary>
-        /// head control.
+        /// CustomCSSPlaceHolder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder CustomCSSPlaceHolder;
         
         /// <summary>
         /// form2 control.
@@ -31,13 +31,13 @@ namespace wet_boew_net_webforms {
         protected global::System.Web.UI.HtmlControls.HtmlForm form2;
         
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// MainContentPlaceHolder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContentPlaceHolder;
         
         /// <summary>
         /// SpeciaLinkLiteral control.
@@ -47,5 +47,14 @@ namespace wet_boew_net_webforms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal SpeciaLinkLiteral;
+        
+        /// <summary>
+        /// CustomScriptsPlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder CustomScriptsPlaceHolder;
     }
 }
