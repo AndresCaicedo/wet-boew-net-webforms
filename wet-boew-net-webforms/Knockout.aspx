@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GCWU-Intranet.Master" AutoEventWireup="true" CodeBehind="Knockout.aspx.cs" Inherits="wet_boew_net_webforms.Knockout" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WET-Theme.Master" AutoEventWireup="true" CodeBehind="Knockout.aspx.cs" Inherits="wet_boew_net_webforms.Knockout" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="CustomCSSPlaceHolder" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
@@ -11,6 +11,7 @@
     <button id="toggleButton" data-bind="click: toggleChoices">Toggle</button>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="CustomScriptsPlaceHolder" runat="server">
+    <script src="Scripts/knockout-2.2.1.js"></script>
     <script>
         $(document).ready(function () {
             var Category = function (categoryName, subCat) {
